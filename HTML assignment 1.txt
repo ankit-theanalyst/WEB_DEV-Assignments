@@ -1,0 +1,99 @@
+﻿Q.1 <!DOCTYPE html> is it a tag of html? If not, what is it and why do we use it?
+
+
+<!DOCTYPE html> is a tag in HTML, although it is not technically an HTML element. It is known as the Document Type Declaration or DOCTYPE declaration.The DOCTYPE declaration is used to specify the version of HTML or XML that is being used in a web document. It is placed at the very beginning of an HTML document, before the <html> tag, to inform the web browser about the type of markup language being used.
+
+
+Q.2 Explain Semantic tags in html? And why do we need it?
+
+
+* Semantic tags in HTML are elements that carry meaning and convey the purpose or structure of the content they enclose.
+* They include tags like <header>, <nav>, <section>, <article>, <footer>, <aside>, <main>, <figure>, and <figcaption>.
+* Semantic tags improve code clarity and readability.
+* They assist in search engine optimization (SEO) by providing clear signals to search engines about the structure and importance of content.
+* Semantic tags enhance accessibility, allowing assistive technologies to interpret and navigate web content more effectively.
+* They make styling and CSS targeting more intuitive and maintainable.
+* Semantic tags are designed to be forward-compatible, ensuring compatibility with future web standards.
+
+
+Q.3 Differentiate between HTML Tags and Elements?
+
+
+HTML Tags:
+
+
+* HTML tags are the markup symbols used to define elements within an HTML document.
+* Tags are enclosed within angle brackets (< and >) and appear as pairs, with an opening tag and a closing tag.
+* The opening tag indicates the start of an element, and the closing tag indicates its end.
+* Example of a tag: <p>...</p>, where <p> is the opening tag and </p> is the closing tag.
+
+
+HTML Elements:
+
+
+* HTML elements are the building blocks of an HTML document and are created using HTML tags.
+* An element consists of an opening tag, content, and a closing tag (if applicable).
+* The content is the information or markup contained between the opening and closing tags.
+* Elements define the structure and semantics of the content within a web page.
+* Example of an element: <p>This is a paragraph.</p>, where <p> is the opening tag, "This is a paragraph." is the content, and </p> is the closing tag.
+
+
+Q.4 Build Your Resume using HTML only
+
+
+<div id="header"></div>
+<div class="left"></div>
+<div class="stuff">
+  <br><br>
+  <h1>Ankit</h1>
+  <h2>Kumar</h2>
+  <hr />
+  <br>
+  <p class="head">Interests</p>
+  <ul>
+    <li>Drawing</li>
+    <li>Photography</li>
+    <li>Design</li>
+    <li>Programming</li>
+    <li>Computer Science</li>
+  </ul>
+  <p class="head">Skills</p>
+  <ul>
+    <li>Web Design with HTML & CSS</li>
+  </ul>
+  <p class="head">Education</p>
+  <ul>
+    <a href="http://www.wiltonhighschool.org/pages/Wilton_High_School">
+      <li>SMI</li>
+    </a>
+    <!--Link-->
+    <a href="https://www.silvermineart.org/">
+      <li>KIIT University</li>
+    </a>
+    <li>PWSKILLS</li>
+  </ul>
+  <p class="head">Experience</p>
+  <ul>
+    <li>Associate Technical COnsultant 1 @ HIghradius</li>
+    <li>Cricketer</li>
+  </ul>
+  <p class="head">Extracurriculars</p>
+  <ul>
+    <li>Recycling Club</li>
+    <li>Gardening Club</li>
+    <li>Book Club</li>
+  </ul>
+</div>
+<div class="right"></div>
+<div id="footer">
+  <h2 id="name">Ankit</h2></div>
+
+
+Q.6 What are some of the advantages of HTML5 over its previous versions?
+
+
+* Improved multimedia support: HTML5 introduced native support for audio and video elements, eliminating the need for third-party plugins like Flash.
+* Enhanced form capabilities: HTML5 introduced new form input types, attributes, and validation features, making form handling and validation easier and more efficient.
+* Mobile device support: HTML5 provides better support for mobile devices, including responsive design, geolocation, and offline storage capabilities.
+* Simplified and cleaner code: HTML5 introduced semantic tags and eliminated many unnecessary and deprecated elements, leading to cleaner and more readable code.
+* Cross-platform compatibility: HTML5 is designed to be compatible across different devices and platforms, promoting consistency and reducing compatibility issues.
