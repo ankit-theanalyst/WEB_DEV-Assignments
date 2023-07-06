@@ -1,0 +1,171 @@
+﻿Q.1 What’s Box Model in CSS ? 
+
+
+The Box Model is a fundamental concept in CSS (Cascading Style Sheets) that describes how elements on a web page are rendered and how their dimensions and spacing are calculated. It consists of four main components: content, padding, border, and margin.
+
+
+Q.2 What are the Different Types of Selectors in CSS & what are the advantages of them?
+
+
+
+
+CSS (Cascading Style Sheets) provides various types of selectors to target and style different elements in a web page. Each selector has its own advantages and use cases. Here are some of the different types of selectors in CSS:
+
+
+* Element Selector:
+Syntax: elementName
+Example: p, h1, div
+Advantage: It selects all elements of a specific type, allowing you to apply styles globally. It is useful for styling multiple elements at once.
+
+
+* Class Selector:
+
+
+Syntax: .className
+Example: .highlight, .btn
+Advantage: It selects elements based on the assigned class name. Multiple elements can share the same class, allowing you to apply consistent styles to them. It promotes code reusability and enables targeted styling.
+
+
+* ID Selector:
+
+
+Syntax: #idName
+Example: #header, #sidebar
+Advantage: It selects a specific element based on its unique ID. IDs should be unique within a page, and this selector allows you to target specific elements for styling or JavaScript interactions.
+
+
+* Attribute Selector:
+
+
+Syntax: [attributeName], [attributeName="value"]
+Example: [type], [href="#"]
+Advantage: It selects elements based on their attributes or attribute values. It is helpful when styling elements based on specific attribute criteria, such as selecting all links with a specific URL.
+
+
+
+
+* Descendant Selector:
+
+
+Syntax: ancestor descendant
+Example: div p, ul li
+Advantage: It selects elements that are descendants of another element. This selector helps in targeting specific elements within a hierarchical structure, such as selecting paragraphs inside a div.
+
+
+* Pseudo-class Selector:
+
+
+Syntax: :pseudoClass
+Example: :hover, :nth-child(n)
+Advantage: It selects elements based on a specific state or condition. Pseudo-classes allow you to style elements dynamically based on user interactions or certain conditions, like hovering over an element or selecting odd/even elements.
+
+
+* Pseudo-element Selector:
+
+
+Syntax: ::pseudoElement
+Example: ::before, ::after
+Advantage: It selects and styles a specific part of an element. Pseudo-elements let you add content or style specific parts of an element, such as adding an icon before a heading or styling the first letter of a paragraph.
+
+
+Q.3 What is VW/VH ?
+
+
+VW (Viewport Width): VW is a unit that represents a percentage of the width of the viewport (the visible portion of the browser window). It is relative to the width of the viewport, where 1 VW is equal to 1% of the viewport width. For example, if the viewport width is 1000 pixels, 1 VW would be equal to 10 pixels (1% of 1000).
+
+
+VH (Viewport Height): VH is a unit that represents a percentage of the height of the viewport. Similar to VW, it is relative to the height of the viewport, where 1 VH is equal to 1% of the viewport height. For example, if the viewport height is 800 pixels, 1 VH would be equal to 8 pixels (1% of 800).
+
+
+Q.4 What's difference between Inline, Inline Block and block ?
+
+
+Inline Elements:
+
+
+Examples: <span>, <a>, <em>, <strong>, <img>, <input>
+Display behavior: Inline elements do not create line breaks before or after themselves. They flow along with the surrounding text or other inline elements, allowing content to appear side-by-side.
+Width and height: Inline elements do not have a fixed width and height. They typically expand horizontally to fit their content.
+Margins and paddings: Top and bottom margins and paddings do not affect the surrounding elements. Left and right margins and paddings can be applied, creating spacing between neighboring inline elements.
+Example use: Inline elements are suitable for small chunks of content within a line of text or for elements that need to be placed alongside each other.
+Inline-Block Elements:
+
+
+Examples: <button>, <label>, <textarea>, <select>
+Display behavior: Inline-block elements exhibit both inline and block-level behavior. They flow along with the surrounding text but also respect width, height, margins, and paddings. They create line breaks before and after themselves if there is not enough horizontal space.
+Width and height: Inline-block elements can have a defined width and height, allowing them to occupy space within the line while still allowing other elements to be adjacent.
+Margins and paddings: Margins and paddings can be applied, creating spacing between inline-block elements and other elements.
+Example use: Inline-block elements are useful when you want elements to flow alongside each other but still be able to apply width, height, margins, or paddings.
+Block Elements:
+
+
+Examples: <div>, <p>, <h1>-<h6>, <ul>, <li>
+Display behavior: Block elements create line breaks before and after themselves, stacking vertically. They take up the entire width available by default and expand to fill the available horizontal space.
+Width and height: Block elements can have a defined width and height, allowing you to control their dimensions explicitly.
+Margins and paddings: Block elements respect all margins and paddings applied to them, creating spacing between themselves and other elements.
+Example use: Block elements are suitable for creating larger sections of content, such as paragraphs, headings, lists, or layout containers. They are used to structure and organize the content of a web page.
+
+
+Q.5 How is Border-box different from Content Box?
+
+
+The main difference is how they calculate an element's width and height:
+
+
+Content-box: The width and height of an element are calculated based on its content area only, excluding padding and border.
+
+
+Border-box: The width and height of an element are calculated including the content, padding, and border.
+
+
+
+
+Q.6 What’s z-index and How does it Function ?
+
+
+The z-index is a CSS property that determines the stacking order of elements. It controls how elements are layered on top of each other in the z-axis. Elements with a higher z-index value appear in front of elements with a lower value. The property is applied to positioned elements and creates stacking contexts. Elements within the same stacking context are stacked based on their z-index values, with higher values appearing on top.
+
+
+Q.7 What’s Grid & Flex and difference between them?
+
+
+The main difference between Grid and Flexbox is their layout model. Grid provides a two-dimensional layout system with control over both rows and columns, making it suitable for complex grid-based designs. Flexbox, on the other hand, offers a one-dimensional layout system, allowing flexible alignment and distribution of items along a single row or column. It is often used for creating responsive and dynamic layouts within a single axis. Both Grid and Flexbox have their strengths and can be used in combination to achieve versatile and robust layouts.
+
+
+Q.8 Difference between absolute and relative and sticky and fixed position explain with example.
+
+
+Absolute Positioning:
+
+
+Absolute positioning allows you to precisely position an element relative to its closest positioned ancestor or the initial containing block.
+The element is taken out of the normal document flow, so it doesn't affect the positioning of other elements.
+It uses the CSS properties top, right, bottom, and left to determine the exact position of the element.
+Example: Let's say you have a div inside a container div. If you set the inner div's position to absolute and provide specific values for top, right, bottom, or left properties, it will be positioned relative to the container or the closest ancestor with a position other than static.
+
+
+Relative Positioning:
+
+
+Relative positioning allows you to adjust an element's position relative to its normal position within the document flow.
+The element still occupies space in the normal flow, so it affects the positioning of other elements.
+It uses the CSS properties top, right, bottom, and left to move the element from its original position.
+Example: If you set an element's position to relative and then use the top or left properties with specific values, it will be shifted from its original position by the specified amount.
+
+
+Sticky Positioning:
+
+
+Sticky positioning is a combination of both relative and fixed positioning.
+The element behaves like a relatively positioned element until it reaches a certain scroll position, after which it becomes fixed to a specific location in the viewport.
+It is commonly used for creating "sticky" headers or navigation menus that remain visible as the user scrolls.
+Example: If you set an element's position to sticky and provide values for top, right, bottom, or left properties, it will remain in its normal position until the user scrolls to a specified offset, at which point it will stick to the viewport.
+
+
+Fixed Positioning:
+
+
+Fixed positioning allows you to position an element relative to the viewport, regardless of scrolling.
+The element is removed from the normal document flow and remains fixed at its specified position even when the page is scrolled.
+It uses the CSS properties top, right, bottom, and left to set the fixed position.
+Example: If you set an element's position to fixed and provide values for top, right, bottom, or left properties, it will stay in the same position on the screen even when the user scrolls.
